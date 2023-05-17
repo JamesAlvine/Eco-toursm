@@ -43,20 +43,21 @@ section {
 }
 .header .logo {
   margin-right: auto;
-  font-size: 2.5rem;
+  font-size: 3.5rem;
   color: #10221b;
   font-weight: bolder;
 }
 .header .logo i {
-  color: green;
+  color: #219150;
 }
 .header .navbar a {
   margin-left: 2rem;
-  font-size: 1.7rem;
+  font-size: 2.3rem;
   color: #10221b;
+  font-weight: bold;
 }
 .header .navbar a:hover {
-  color: green;
+  color: #219150;
 }
 .header .navbar #nav-close {
   font-size: 5rem;
@@ -69,11 +70,11 @@ section {
   font-size: 2.5rem;
   margin-left: 2rem;
   cursor: pointer;
-  color: black;
+  color: #10221b;
 }
 .header .icons a:hover,
 .header .icons div:hover {
-  color: green;
+  color: #219150;
 }
 .header #menu-btn {
   display: none;
@@ -143,6 +144,24 @@ section {
   align-items: center;
   background-size: cover !important;
   background-position: center !important;
+  justify-content: flex-end;
+  padding: 2rem 9%;
+}
+.home .box.second {
+  justify-content: flex-start;
+}
+.home .box .content {
+  width: 50rem;
+}
+.home .box .content span {
+  font-size: 7rem;
+  color: #fff;
+}
+.home .box .content h3 {
+  font-size: 6rem;
+  color: #219150;
+  padding-top: 0.5rem;
+  text-transform: uppercase;
 }
 
 /* media queries */
