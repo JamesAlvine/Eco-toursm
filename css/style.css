@@ -163,6 +163,13 @@ section {
   padding-top: 0.5rem;
   text-transform: uppercase;
 }
+.home .box .content p {
+  line-height: 2;
+  color: white;
+  font-size: 2rem;
+  padding: 1rem0;
+  font-weight: bold;
+}
 
 /* media queries */
 @media (max-width: 1200px) {
