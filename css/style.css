@@ -31,6 +31,21 @@ section {
   padding: 5rem 9%;
 }
 
+.btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 2rem solid #10221b;
+  color: black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+.btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+
 .header {
   position: fixed;
   top: 0;
