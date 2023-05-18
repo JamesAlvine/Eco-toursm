@@ -292,3 +292,9 @@ section {
   }
 }
  
+.swiper-button-next::after,
+.swiper-pagination::after,
+.swiper-button-prev::after{
+    font-size: 2rem;
+    color: $black;
+}

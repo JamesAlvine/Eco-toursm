@@ -236,4 +236,10 @@ section {
   html {
     font-size: 50%;
   }
+}
+.swiper-button-next::after,
+.swiper-pagination::after,
+.swiper-button-prev::after {
+  font-size: 2rem;
+  color: #10221b;
 }/*# sourceMappingURL=style.css.map */

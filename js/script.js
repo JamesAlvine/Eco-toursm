@@ -30,6 +30,8 @@ window.onscroll=()=>{
 };
 
 var swiper = new Swiper(".home-slider", {
+    loop: true,
+    grabCursor: true,
     cssMode: true,
     navigation: {
       nextEl: ".swiper-button-next",
