@@ -295,6 +295,7 @@ section {
 .swiper-button-next::after,
 .swiper-pagination::after,
 .swiper-button-prev::after{
-    font-size: 2rem;
-    color: $black;
+    font-size: 3rem;
+    color: green;
+    font-weight: bold;
 }

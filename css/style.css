@@ -240,6 +240,7 @@ section {
 .swiper-button-next::after,
 .swiper-pagination::after,
 .swiper-button-prev::after {
-  font-size: 2rem;
-  color: #10221b;
+  font-size: 3rem;
+  color: green;
+  font-weight: bold;
 }/*# sourceMappingURL=style.css.map */
