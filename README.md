@@ -1,5 +1,16 @@
 
-# Eco-Toursim
+# Eco-Tourism
 
-This is a simple Toursim managment system made using html and scss with some javascript
+A brief description of what this project does and who it's for
 
+## Authors
+
+- [@James Alvine](http://github.com/jamesalvine)
+
+## Contributing
+
+Contributions are always welcome!
+
+## License
+
+[MIT](https://choosealicense.com/licenses/mit/)
