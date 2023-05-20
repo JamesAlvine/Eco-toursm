@@ -273,4 +273,17 @@ section {
   font-size: 3rem;
   color: green;
   font-weight: bold;
+}
+
+.category .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(29rem, 1fr));
+  gap: 1.5rem;
+}
+.category .box-container .box {
+  text-align: center;
+  padding: 2rem;
+}
+.category .box-container .box img {
+  height: 20rem;
 }/*# sourceMappingURL=style.css.map */

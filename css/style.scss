@@ -339,6 +339,16 @@ section {
 }
 .category{
   .box-container{
-    
+    @include grid(29rem);
+
+    .box{
+      text-align: center;
+      padding: 2rem;
+
+      img{
+        height: 20rem;
+      }
+    }
+
   }
 }
