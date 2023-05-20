@@ -64,6 +64,15 @@ section {
   }
 }
 
+.heading{
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: $black;
+
+}
+
+
 .header {
   position: fixed;
   top: 0;
@@ -218,6 +227,7 @@ section {
         padding-top: 0.5rem;
         text-transform: uppercase;
       }
+
       p {
         line-height: 2;
         color: white;
@@ -245,6 +255,28 @@ section {
   html {
     font-size: 55%;
   }
+
+  .home .box {
+    padding: 2rem;
+    justify-content: center;
+    background-position: right !important;
+
+    &.second {
+      justify-content: center;
+      background-position: right !important;
+    }
+    .content{
+      text-align: center;
+      span{
+        font-size: 2rem;
+      }
+
+      h3{
+        font-size: 4rem;
+      }
+    }
+  }
+
 }
 
 @media (max-width: 768px) {
@@ -284,6 +316,12 @@ section {
       }
     }
   }
+  .swiper-button-next::after,
+  .swiper-pagination::after,
+  .swiper-button-prev::after {
+    display: none;
+  }
+
 
   @media (max-width: 450px) {
     html {
@@ -291,11 +329,16 @@ section {
     }
   }
 }
- 
+
 .swiper-button-next::after,
 .swiper-pagination::after,
-.swiper-button-prev::after{
-    font-size: 3rem;
-    color: green;
-    font-weight: bold;
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: green;
+  font-weight: bold;
+}
+.category{
+  .box-container{
+    
+  }
 }
