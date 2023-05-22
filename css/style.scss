@@ -64,7 +64,7 @@ section {
   }
 }
 
-.heading{
+.heading {
   text-align: center;
   margin-bottom: 2.5rem;
   font-size: 4rem;
@@ -82,6 +82,14 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
+
+
+  // to confirm if the images fades
+  
+  &.active{
+    background-color: $white;
+    box-shadow: $box-show;
+  }
 
   .logo {
     margin-right: auto;
@@ -239,6 +247,70 @@ section {
   }
 }
 
+.swiper-button-next::after,
+.swiper-pagination::after,
+.swiper-button-prev::after {
+  font-size: 3rem;
+  color: green;
+  font-weight: bold;
+}
+
+.category {
+  .box-container {
+    @include grid(29rem);
+
+    .box {
+      text-align: center;
+      padding: 1rem;
+
+      img {
+        height: 40rem;
+        width: 37rem;
+        border-radius: 50%;
+        margin-bottom: 1rem;
+      }
+
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+
+  }
+}
+.about{
+  background: lightblue;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  
+  
+  .image{
+    flex: 1 1 42rem;
+    padding-right: 5rem;
+    padding-bottom: 5rem;
+    height: 32rems;
+    width: 12%;
+
+    .img{
+      width: 10%;
+    
+    }
+
+  }
+
+
+}
+
+
 /* media queries */
 
 @media (max-width: 1200px) {
@@ -265,13 +337,15 @@ section {
       justify-content: center;
       background-position: right !important;
     }
-    .content{
+
+    .content {
       text-align: center;
-      span{
+
+      span {
         font-size: 2rem;
       }
 
-      h3{
+      h3 {
         font-size: 4rem;
       }
     }
@@ -316,6 +390,7 @@ section {
       }
     }
   }
+
   .swiper-button-next::after,
   .swiper-pagination::after,
   .swiper-button-prev::after {
@@ -327,29 +402,5 @@ section {
     html {
       font-size: 50%;
     }
-  }
-}
-
-.swiper-button-next::after,
-.swiper-pagination::after,
-.swiper-button-prev::after {
-  font-size: 3rem;
-  color: green;
-  font-weight: bold;
-}
-.category{
-  .box-container{
-    @include grid(29rem);
-
-    .box{
-      text-align: center;
-      padding: 2rem;
-
-      img{
-        height: 40rem;
-        width: 37rem;
-      }
-    }
-
   }
 }
