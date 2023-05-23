@@ -242,11 +242,9 @@ section {
   flex: 1 1 42rem;
   padding-right: 5rem;
   padding-bottom: 5rem;
-  height: 32rems;
-  width: 12%;
 }
 .about .image .img {
-  width: 10%;
+  width: 1.5rem;
 }
 
 /* media queries */
