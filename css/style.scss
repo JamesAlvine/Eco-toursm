@@ -85,9 +85,9 @@ section {
 
 
   // to confirm if the images fades
-  
-  &.active{
-    background-color: $white;
+
+  &.active {
+    background-color: whitesmoke;
     box-shadow: $box-show;
   }
 
@@ -240,7 +240,7 @@ section {
         line-height: 2;
         color: white;
         font-size: 2rem;
-        padding: 1rem0;
+        padding: 1rem 0;
         font-weight: bold;
       }
     }
@@ -285,25 +285,41 @@ section {
 
   }
 }
-.about{
+
+.about {
   background: lightblue;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
   gap: 2rem;
-  
-  
-  .image{
+
+  .image {
     flex: 1 1 42rem;
     padding-right: 5rem;
-    padding-bottom: 5rem;
+    padding-left: 5rem;
 
-    .img{
-      width: 1.5rem;
-      
-    
+    img {
+      width: 100%;
+      border-radius: 8px;
+      box-shadow: 4rem 4rem 0 rgba(0, 0, 0, 0.1);
+    }
+  }
+
+  .content {
+    flex: 1 1 42rem;
+
+    h3 {
+      font-size: 3rem;
+      color: $green;
     }
 
+    p {
+      font-size: 1.5rem;
+      color: $black;
+      padding: 1rem 0;
+      line-height: 2;
+
+    }
   }
 
 
@@ -325,6 +341,7 @@ section {
 @media (max-width: 991px) {
   html {
     font-size: 55%;
+    scroll-padding-top: 7rem;
   }
 
   .home .box {
@@ -357,7 +374,6 @@ section {
     #menu-btn {
       display: inline-block;
     }
-
     .navbar {
       position: fixed;
       top: 0;
