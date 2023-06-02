@@ -282,6 +282,9 @@ section {
   width: 100%;
   position: absolute;
   bottom: 2rem;
+  left: 0;
+  text-align: center;
+  z-index: 10;
 }
 .shop .slide .content {
   padding: 1rem 0;

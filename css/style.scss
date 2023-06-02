@@ -345,7 +345,13 @@ section {
       .icons{
         width: 100%;
         position: absolute;
-        bottom: 2rem;
+        bottom: 2rem; left: 0;
+        text-align: center;
+        z-index: 10;
+
+        a{
+          
+        }
 
       }
     }
