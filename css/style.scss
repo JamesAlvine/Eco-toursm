@@ -328,8 +328,12 @@ section {
 
 .shop{
   .slide{
-    width: 35rem;
     border: green;
+
+    &:hover .image .icons{
+      transform: translateY(0rem);
+
+    }
 
     .image{
       position: relative;
@@ -348,9 +352,22 @@ section {
         bottom: 2rem; left: 0;
         text-align: center;
         z-index: 10;
+        transform: translateY(7rem);
 
         a{
-          
+          height: 4.5rem;
+          width: 4.5rem;
+          line-height: 4.5rem;
+          font-size: 1.7rem;
+          background: $black;
+          color: $white;
+          margin: 0.2rem;
+
+          &:hover{
+            background: $green;
+          }
+
+
         }
 
       }

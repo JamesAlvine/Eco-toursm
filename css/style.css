@@ -263,8 +263,10 @@ section {
 }
 
 .shop .slide {
-  width: 35rem;
   border: green;
+}
+.shop .slide:hover .image .icons {
+  transform: translateY(0rem);
 }
 .shop .slide .image {
   position: relative;
@@ -285,6 +287,19 @@ section {
   left: 0;
   text-align: center;
   z-index: 10;
+  transform: translateY(7rem);
+}
+.shop .slide .image .icons a {
+  height: 4.5rem;
+  width: 4.5rem;
+  line-height: 4.5rem;
+  font-size: 1.7rem;
+  background: #10221b;
+  color: #fff;
+  margin: 0.2rem;
+}
+.shop .slide .image .icons a:hover {
+  background: #219150;
 }
 .shop .slide .content {
   padding: 1rem 0;
