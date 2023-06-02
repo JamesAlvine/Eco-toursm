@@ -263,10 +263,11 @@ section {
 }
 
 .shop .slide {
+  width: 35rem;
   border: green;
 }
 .shop .slide:hover .image .icons {
-  transform: translateY(0rem);
+  transform: translateY(0);
 }
 .shop .slide .image {
   position: relative;
@@ -310,7 +311,7 @@ section {
   color: #10221b;
 }
 .shop .slide .content .price {
-  padding: 1rem 0;
+  padding: 1 rem 0;
   padding-top: 0.5rem;
   font-size: 1.5rem;
   color: #219150;
