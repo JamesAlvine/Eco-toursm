@@ -69,9 +69,7 @@ section {
   margin-bottom: 2.5rem;
   font-size: 4rem;
   color: $black;
-
 }
-
 
 .header {
   position: fixed;
@@ -82,7 +80,6 @@ section {
   z-index: 1000;
   display: flex;
   align-items: center;
-
 
   // to confirm if the images fades
 
@@ -282,7 +279,6 @@ section {
         line-height: 2;
       }
     }
-
   }
 }
 
@@ -318,92 +314,75 @@ section {
       color: $black;
       padding: 1rem 0;
       line-height: 2;
-
     }
   }
-
 }
 
-
-
-.shop{
-  .slide{
+.shop {
+  .slide {
     width: 35rem;
     border: green;
 
-    &:hover .image .icons{
+    &:hover .image .icons {
       transform: translateY(0);
-
     }
 
-    .image{
+    .image {
       position: relative;
       overflow: hidden;
       height: 30rem;
       width: 100%;
-      img{
+      img {
         height: 100%;
         width: 100%;
         object-fit: cover;
-
       }
-      .icons{
+      .icons {
         width: 100%;
         position: absolute;
-        bottom: 2rem; left: 0;
+        bottom: 2rem;
+        left: 0;
         text-align: center;
         z-index: 10;
         transform: translateY(7rem);
 
-        a{
+        a {
           height: 4.5rem;
           width: 4.5rem;
           line-height: 4.5rem;
           font-size: 1.7rem;
           background: $black;
           color: $white;
-          margin: 0.2rem;
+          margin: 1.2rem;
 
-          &:hover{
+          &:hover {
             background: $green;
           }
-
-
         }
-
       }
     }
 
-    .content{
+    .content {
       padding: 1rem 0;
       text-align: center;
 
-      h3{
+      h3 {
         font-size: 2rem;
         color: $black;
       }
-      .price{
+      .price {
         padding: 1 rem 0;
-        padding-top: .5rem;
+        padding-top: 0.5rem;
         font-size: 1.5rem;
         color: $green;
-
       }
-      .stars{
+      .stars {
         font-size: 1.7rem;
         color: $black;
       }
-
     }
   }
-
 }
-
-
-
-
-
-
 
 /* media queries */
 
@@ -445,7 +424,6 @@ section {
       }
     }
   }
-
 }
 
 @media (max-width: 768px) {
@@ -491,10 +469,13 @@ section {
     display: none;
   }
 
-
   @media (max-width: 450px) {
     html {
       font-size: 50%;
+    }
+    .heading{
+      font-size: 3rem;
+
     }
   }
 }

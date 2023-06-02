@@ -63,7 +63,7 @@ var swiper = new Swiper(".home-slider", {
   });
 
 
-  var swiper = new Swiper(".home-slider", {
+  var swiper = new Swiper(".product-slide", {
     loop: true,
     grabCursor: true,
     cssMode: true,    
@@ -73,24 +73,19 @@ var swiper = new Swiper(".home-slider", {
       prevEl: ".swiper-button-prev",
     },
     breakpoints: {
-        0: {
-            slidesPerView: 1,
-          },
-        640: {
-          slidesPerView: 2,
-        },
-        768: {
-          slidesPerView: 3,
-        },
-        1024: {
-          slidesPerView: 4,
-        },
+      0: {
+        slidesPerView: 1,
       },
-    pagination: {
-      el: ".swiper-pagination",
+      640: {
+        slidesPerView: 2,
+      },
+      768: {
+        slidesPerView: 3,
+      },
+      1024: {
+        slidesPerView: 4,
+      },
     },
-    mousewheel: true,
-    keyboard: true,
   });
 
 
