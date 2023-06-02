@@ -278,9 +278,28 @@ section {
   -o-object-fit: cover;
      object-fit: cover;
 }
+.shop .slide .image .icons {
+  width: 100%;
+  position: absolute;
+  bottom: 2rem;
+}
 .shop .slide .content {
   padding: 1rem 0;
   text-align: center;
+}
+.shop .slide .content h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.shop .slide .content .price {
+  padding: 1rem 0;
+  padding-top: 0.5rem;
+  font-size: 1.5rem;
+  color: #219150;
+}
+.shop .slide .content .stars {
+  font-size: 1.7rem;
+  color: #10221b;
 }
 
 /* media queries */
