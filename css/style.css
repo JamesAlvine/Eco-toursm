@@ -321,6 +321,47 @@ section {
   color: #10221b;
 }
 
+.packages {
+  background: 0;
+}
+.packages .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(32rem, 1fr));
+  gap: 1.5rem;
+}
+.packages .box-container .box {
+  text-align: center;
+  background: #fff;
+  border: 2rem solid #10221b;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+.packages .box-container .box .image {
+  height: 25rem;
+  overflow: hidden;
+  padding: 2rem;
+  padding-bottom: 0;
+  border-radius: 0.5rem;
+}
+.packages .box-container .box .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border-radius: 0.5rem;
+}
+.packages .box-container .box .content {
+  padding: 2rem;
+}
+.packages .box-container .box h3 {
+  font-size: 2rem;
+  color: #10221b;
+}
+.packages .box-container .box P {
+  font-size: 2rem;
+  color: #10221b;
+  padding: 1rem 0;
+}
+
 /* media queries */
 @media (max-width: 1200px) {
   .header {
