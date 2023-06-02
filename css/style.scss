@@ -322,8 +322,41 @@ section {
     }
   }
 
+}
+
+
+
+.shop{
+  .slide{
+    width: 35rem;
+    border: green;
+
+    .image{
+      position: relative;
+      overflow: hidden;
+      height: 30rem;
+      width: 100%;
+      img{
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+
+      }
+    }
+
+    .content{
+      padding: 1rem 0;
+      text-align: center;
+
+    }
+  }
 
 }
+
+
+
+
+
 
 
 /* media queries */

@@ -262,6 +262,27 @@ section {
   line-height: 2;
 }
 
+.shop .slide {
+  width: 35rem;
+  border: green;
+}
+.shop .slide .image {
+  position: relative;
+  overflow: hidden;
+  height: 30rem;
+  width: 100%;
+}
+.shop .slide .image img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.shop .slide .content {
+  padding: 1rem 0;
+  text-align: center;
+}
+
 /* media queries */
 @media (max-width: 1200px) {
   .header {
