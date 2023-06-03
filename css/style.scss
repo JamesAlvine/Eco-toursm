@@ -385,7 +385,7 @@ section {
 }
 
 .packages{
-  background: green($color: #000000);
+  background: $green;
 
   .box-container{
     @include grid(32rem);
@@ -401,7 +401,7 @@ section {
         background: $black;
 
         .content > *{
-          color: $white;
+          color: $white ;
         }
 
 
@@ -444,6 +444,26 @@ section {
     }
   }
 }
+
+.services{
+  background: lightgray;
+
+  .box-container{
+    @include grid(31rem);
+
+    .box{
+      text-align: center;
+      padding: 2rem;
+      border: $border;
+      border-radius: .5rem;
+      background: $white;
+    }
+
+  }
+
+}
+
+
 
 
 

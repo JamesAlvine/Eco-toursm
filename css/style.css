@@ -322,7 +322,7 @@ section {
 }
 
 .packages {
-  background: 0;
+  background: #219150;
 }
 .packages .box-container {
   display: grid;
@@ -372,6 +372,22 @@ section {
 .packages .box-container .box .price {
   font-size: 2rem;
   color: #219150;
+}
+
+.services {
+  background: lightgray;
+}
+.services .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(31rem, 1fr));
+  gap: 1.5rem;
+}
+.services .box-container .box {
+  text-align: center;
+  padding: 2rem;
+  border: 2rem solid #10221b;
+  border-radius: 0.5rem;
+  background: #fff;
 }
 
 /* media queries */
