@@ -395,6 +395,17 @@ section {
       background: $white;
       border: $border;
       box-shadow: $box-show;
+      border-radius: .5rem;
+
+      &:hover{
+        background: $black;
+
+        .content > *{
+          color: $white;
+        }
+
+
+      }
 
 
       .image{
@@ -424,6 +435,11 @@ section {
         font-size: 2rem;
         color: $black;
         padding: 1rem 0;
+        line-height: 2;
+      }
+      .price{
+        font-size: 2rem;
+        color: $green;
       }
     }
   }

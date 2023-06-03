@@ -334,6 +334,13 @@ section {
   background: #fff;
   border: 2rem solid #10221b;
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+  border-radius: 0.5rem;
+}
+.packages .box-container .box:hover {
+  background: #10221b;
+}
+.packages .box-container .box:hover .content > * {
+  color: #fff;
 }
 .packages .box-container .box .image {
   height: 25rem;
@@ -360,6 +367,11 @@ section {
   font-size: 2rem;
   color: #10221b;
   padding: 1rem 0;
+  line-height: 2;
+}
+.packages .box-container .box .price {
+  font-size: 2rem;
+  color: #219150;
 }
 
 /* media queries */
