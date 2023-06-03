@@ -420,11 +420,23 @@
 <!-- form section -->
 <section class="contact">
   <div class="container">
-    <form action="action_page.php">
-  
-     
-  
-    </form>
+    <form action="submit.php" method="POST">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+      </div>
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <div>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div>
+        <button type="submit">Submit</button>
+      </div>
+    </form> 
   </div>
 
 </section>
@@ -435,7 +447,7 @@
 
 <!-- ----------------------------------------------------- -->
 <!-- footer section starts here -->
-<!-- <section class="footer">
+<section class="footer">
   <div class="box-container">
     <div class="box">
       <h3>Quick links</h3>
@@ -446,13 +458,22 @@
       <a href="#contact-us">Contact Us</a>
     </div>
     <div class="box">
+      <h3>Quick links</h3>
+      <a href="#">My account</a>
+      <a href="#">My orders</a>
+      <a href="#">My wish list </a>
+      <a href="#">Terms of use</a>
+      <a href="#">Privacy policy</a>
+    </div>
+    <div class="box">
       <h3>contact info</h3>
+      <a href="#" ><i class="fas fa-phone></i></a>
     </div>
 
 
 
   </div>
-</section> -->
+</section>
 <!-- footer section ends here -->
 
 <!-- ----------------------------------------------------- -->
