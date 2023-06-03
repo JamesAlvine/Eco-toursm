@@ -445,24 +445,6 @@ section {
   }
 }
 
-.services{
-  background: lightgray;
-
-  .box-container{
-    @include grid(31rem);
-
-    .box{
-      text-align: center;
-      padding: 2rem;
-      border: $border;
-      border-radius: .5rem;
-      background: $white;
-    }
-
-  }
-
-}
-
 
 
 
