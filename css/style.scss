@@ -384,60 +384,56 @@ section {
   }
 }
 
-.packages{
+.packages {
   background: $green;
 
-  .box-container{
+  .box-container {
     @include grid(32rem);
 
-    .box{
+    .box {
       text-align: center;
       background: $white;
       border: $border;
       box-shadow: $box-show;
-      border-radius: .5rem;
+      border-radius: 0.5rem;
 
-      &:hover{
+      &:hover {
         background: $black;
 
-        .content > *{
-          color: $white ;
+        .content > * {
+          color: $white;
         }
-
-
       }
 
-
-      .image{
+      .image {
         height: 25rem;
         overflow: hidden;
         padding: 2rem;
         padding-bottom: 0;
-        border-radius: .5rem;
+        border-radius: 0.5rem;
 
-        img{
+        img {
           height: 100%;
           width: 100%;
           object-fit: cover;
-          border-radius: .5rem;
+          border-radius: 0.5rem;
         }
-
       }
 
-      .content{
+      .content {
         padding: 2rem;
       }
-      h3{
+      h3 {
         font-size: 2rem;
         color: $black;
       }
-      P{
+      P {
         font-size: 2rem;
         color: $black;
         padding: 1rem 0;
         line-height: 2;
       }
-      .price{
+      .price {
         font-size: 2rem;
         color: $green;
       }
@@ -445,14 +441,204 @@ section {
   }
 }
 
+.services {
+  background: gray;
 
+  .box-container {
+    @include grid(32rem);
 
+    .box {
+      text-align: center;
+      padding: 2rem;
+      border: $border;
+      border-radius: 0.5rem;
+      background: $white;
 
+      &:hover {
+        background: $black;
 
+        img {
+          filter: invert(1);
+        }
+        p {
+          color: wheat;
+        }
+        .btn {
+          border-color: $white;
+          color: $white;
 
+          &:hover {
+            background: $white;
+            color: $black;
+          }
+        }
+      }
 
+      img {
+        height: 10rem;
+        margin-bottom: 1rem;
+      }
+      h3 {
+        font-size: 2rem;
+        color: $green;
+      }
+      p {
+        font-size: 1.5rem;
+        color: $black;
+        padding: 1rem 0;
+        line-height: 2;
+      }
+    }
+  }
+}
 
+.reviews {
+  .slide {
+    .text {
+      padding: 2rem;
+      font-size: 1.5rem;
+      font-style: italic;
+      background: gray;
+      border-radius: 0.5rem;
+      color: $black;
+      line-height: 2;
+      position: relative;
+      z-index: 0;
+      margin-bottom: 3rem;
 
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0.2%;
+        left: 1.3rem;
+        height: 3rem;
+        width: 3rem;
+        background: gray;
+        transform: rotate(45deg);
+      }
+    }
+
+    .user {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      img {
+        height: 7rem;
+        width: 7rem;
+        border-radius: 50%;
+      }
+      h3 {
+        font-size: 2rem;
+        color: black;
+      }
+      span {
+        color: $green;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+.blogs {
+  .slide {
+    text-align: center;
+    padding: 2rem;
+
+    img {
+      height: 25rem;
+      width: 100%;
+      object-fit: cover;
+      border-radius: 0.5rem;
+    }
+
+    .icons {
+      background: $black;
+      border-radius: 0.5rem;
+      padding: 1rem;
+      position: relative;
+      top: -2rem;
+      display: inline-block;
+
+      a {
+        font-size: 1.4rem;
+        color: $white;
+        margin: 0 1rem;
+
+        &:hover {
+          color: $green;
+        }
+        i {
+          padding-right: 0.5rem;
+          color: $green;
+        }
+      }
+    }
+    h3 {
+      font-size: 2rem;
+      color: $black;
+    }
+    p {
+      font-size: 1.4rem;
+      padding: 1rem 0;
+      color: $black;
+    }
+  }
+}
+
+.newsletter {
+  background: whitesmoke;
+
+  .content {
+    max-width: 70rem;
+    margin: 1rem auto;
+    text-align: center;
+
+    p {
+      font-size: 1.5rem;
+      line-height: 2;
+      color: $black;
+    }
+
+    form {
+      margin-top: 2rem;
+      background: $white;
+      border-radius: 5rem;
+      border: $border;
+      padding: 0.7rem;
+      display: flex;
+
+      .email {
+        width: 100%;
+        background: none;
+        text-transform: none;
+        font-size: 1.6rem;
+        color: $black;
+        padding: 0 1.3rem;
+      }
+
+      .btn {
+        margin-top: 0;
+        border-radius: 5rem;
+        background: $black;
+        color: $white;
+
+        &:hover {
+          background: none;
+          color: $black;
+        }
+      }
+    }
+  }
+}
+.partners {
+  .slide {
+    text-align: center;
+    img {
+      height: 12rem;
+    }
+  }
+}
 
 /* media queries */
 
@@ -495,6 +681,51 @@ section {
     }
   }
 }
+
+.footer {
+  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) url(../images/nairobi.jpg) no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+
+  .box-container{
+    @include grid(25rem);
+
+    .box{
+
+      h3{
+        font-size: 2rem;
+        padding: 1.5rem 0;
+        color: $white;
+      }
+
+      a{
+        display: block;
+        font-size: 1.4rem;
+        color: $white;
+        padding: 1rem 0;
+
+        i{
+          color: $green;
+          padding-right: .5rem;
+        }
+        
+        &:hover{
+          color: $green;
+
+          i{
+            padding-right: 2rem;
+          }
+        }
+      }
+      
+    }
+
+  }
+}
+
+
+
 
 @media (max-width: 768px) {
   .header {
@@ -543,9 +774,8 @@ section {
     html {
       font-size: 50%;
     }
-    .heading{
+    .heading {
       font-size: 3rem;
-
     }
   }
 }
