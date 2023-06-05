@@ -36,13 +36,34 @@ html {
   }
 
   &::-webkit-scrollbar-track {
-    background: white;
+    background: $white;
   }
 
   &::-webkit-scrollbar-thumb {
-    background: black;
+    background: $black;
   }
 }
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding: 2rem 9%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+
+  .logo {
+    margin-right: auto;
+    font-size: 2.5rem;
+    color: $black;
+    font-weight: bolder;
+
+    i {
+      color: $green;
+    }
+  }
 
 section {
   padding: 5rem 9%;
@@ -71,15 +92,7 @@ section {
   color: $black;
 }
 
-.header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  padding: 2rem 9%;
-  z-index: 1000;
-  display: flex;
-  align-items: center;
+
 
   // to confirm if the images fades
 
@@ -88,21 +101,12 @@ section {
     box-shadow: $box-show;
   }
 
-  .logo {
-    margin-right: auto;
-    font-size: 3.5rem;
-    color: $black;
-    font-weight: bolder;
-
-    i {
-      color: $green;
-    }
-  }
+ 
 
   .navbar {
     a {
       margin-left: 2rem;
-      font-size: 2.3rem;
+      font-size: 1.9rem;
       color: $black;
       font-weight: bold;
 
@@ -117,23 +121,14 @@ section {
       color: black;
       display: none;
     }
-  }
-
-  .icons a,
-  .icons div {
-    font-size: 2.5rem;
-    margin-left: 2rem;
-    cursor: pointer;
-    color: $black;
-
-    &:hover {
-      color: $green;
+    #menu-btn {
+      display: none;
     }
   }
 
-  #menu-btn {
-    display: none;
-  }
+ 
+
+  
 }
 
 .search-form {
@@ -735,11 +730,12 @@ section {
     .navbar {
       position: fixed;
       top: 0;
-      left: -11%;
+      left: 0;
       background: white;
       z-index: 10000;
       width: 35rem;
       height: 100%;
+      box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
       display: flex;
       flex-flow: column;
       align-items: center;

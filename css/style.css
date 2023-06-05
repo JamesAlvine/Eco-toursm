@@ -21,36 +21,10 @@ html::-webkit-scrollbar {
   width: 1rem;
 }
 html::-webkit-scrollbar-track {
-  background: white;
+  background: #fff;
 }
 html::-webkit-scrollbar-thumb {
-  background: black;
-}
-
-section {
-  padding: 5rem 9%;
-}
-
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: 2rem solid #10221b;
-  color: black;
-  cursor: pointer;
-  background: none;
-  font-size: 1.7rem;
-  padding: 1rem 3rem;
-}
-.btn:hover {
   background: #10221b;
-  color: #fff;
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 4rem;
-  color: #10221b;
 }
 
 .header {
@@ -63,22 +37,45 @@ section {
   display: flex;
   align-items: center;
 }
-.header.active {
-  background-color: whitesmoke;
-  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
-}
 .header .logo {
   margin-right: auto;
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   color: #10221b;
   font-weight: bolder;
 }
 .header .logo i {
   color: #219150;
 }
+.header section {
+  padding: 5rem 9%;
+}
+.header .btn {
+  margin-top: 1rem;
+  display: inline-block;
+  border: 2rem solid #10221b;
+  color: black;
+  cursor: pointer;
+  background: none;
+  font-size: 1.7rem;
+  padding: 1rem 3rem;
+}
+.header .btn:hover {
+  background: #10221b;
+  color: #fff;
+}
+.header .heading {
+  text-align: center;
+  margin-bottom: 2.5rem;
+  font-size: 4rem;
+  color: #10221b;
+}
+.header.active {
+  background-color: whitesmoke;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
 .header .navbar a {
   margin-left: 2rem;
-  font-size: 2.3rem;
+  font-size: 1.9rem;
   color: #10221b;
   font-weight: bold;
 }
@@ -91,18 +88,7 @@ section {
   color: black;
   display: none;
 }
-.header .icons a,
-.header .icons div {
-  font-size: 2.5rem;
-  margin-left: 2rem;
-  cursor: pointer;
-  color: #10221b;
-}
-.header .icons a:hover,
-.header .icons div:hover {
-  color: #219150;
-}
-.header #menu-btn {
+.header .navbar #menu-btn {
   display: none;
 }
 
@@ -623,11 +609,12 @@ section {
   .header .navbar {
     position: fixed;
     top: 0;
-    left: -11%;
+    left: 0;
     background: white;
     z-index: 10000;
     width: 35rem;
     height: 100%;
+    box-shadow: 0 0 0 100vw rgba(0, 0, 0, 0.8);
     display: flex;
     flex-flow: column;
     align-items: center;
