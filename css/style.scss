@@ -64,45 +64,6 @@ html {
       color: $green;
     }
   }
-
-section {
-  padding: 5rem 9%;
-}
-
-.btn {
-  margin-top: 1rem;
-  display: inline-block;
-  border: $border;
-  color: black;
-  cursor: pointer;
-  background: none;
-  font-size: 1.7rem;
-  padding: 1rem 3rem;
-
-  &:hover {
-    background: $black;
-    color: $white;
-  }
-}
-
-.heading {
-  text-align: center;
-  margin-bottom: 2.5rem;
-  font-size: 4rem;
-  color: $black;
-}
-
-
-
-  // to confirm if the images fades
-
-  &.active {
-    background-color: whitesmoke;
-    box-shadow: $box-show;
-  }
-
- 
-
   .navbar {
     a {
       margin-left: 2rem;
@@ -118,7 +79,7 @@ section {
     #nav-close {
       font-size: 5rem;
       cursor: pointer;
-      color: black;
+      color: $black;
       display: none;
     }
     #menu-btn {
@@ -126,9 +87,51 @@ section {
     }
   }
 
- 
+  .icons a,
+  .icons div {
+    font-size: 2.5rem;
+    margin-left: 2rem;
+    cursor: pointer;
+    color: $black;
 
-  
+    &:hover {
+      color: $green;
+    }
+  }
+
+  section {
+    padding: 5rem 9%;
+  }
+
+  .btn {
+    margin-top: 1rem;
+    display: inline-block;
+    border: $border;
+    color: black;
+    cursor: pointer;
+    background: none;
+    font-size: 1.7rem;
+    padding: 1rem 3rem;
+
+    &:hover {
+      background: $black;
+      color: $white;
+    }
+  }
+
+  .heading {
+    text-align: center;
+    margin-bottom: 2.5rem;
+    font-size: 4rem;
+    color: $black;
+  }
+
+  // to confirm if the images fades
+
+  &.active {
+    background-color: whitesmoke;
+    box-shadow: $box-show;
+  }
 }
 
 .search-form {
@@ -678,49 +681,44 @@ section {
 }
 
 .footer {
-  background:linear-gradient(rgba(0,0,0,.5),rgba(0,0,0,.5)) url(../images/nairobi.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5))
+    url(../images/nairobi.jpg) no-repeat;
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
 
-  .box-container{
+  .box-container {
     @include grid(25rem);
 
-    .box{
-
-      h3{
+    .box {
+      h3 {
         font-size: 2rem;
         padding: 1.5rem 0;
         color: $white;
       }
 
-      a{
+      a {
         display: block;
         font-size: 1.4rem;
         color: $white;
         padding: 1rem 0;
 
-        i{
+        i {
           color: $green;
-          padding-right: .5rem;
+          padding-right: 0.5rem;
         }
-        
-        &:hover{
+
+        &:hover {
           color: $green;
 
-          i{
+          i {
             padding-right: 2rem;
           }
         }
       }
-      
     }
-
   }
 }
-
-
-
 
 @media (max-width: 768px) {
   .header {
